@@ -1,0 +1,20 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Login</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="login-container">
+  <ion-content class="inner-login-container">
+      <div class="list list-inset">
+          <label class="item item-input">
+              <input type="text" placeholder="Username" ng-model="data.username">
+          </label>
+          <label class="item item-input">
+              <input type="password" placeholder="Password" ng-model="data.password">
+          </label>
+          <ion-button routerLink="/home" routerDirection="forward">Login</ion-button>
+          <button class="button button-block button-calm" ng-click="login()">Login</button>
+      </div>
+  </ion-content>
+</ion-content>
