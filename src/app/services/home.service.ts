@@ -16,6 +16,10 @@ export class HomeService {
 
   /* making request to star wars api for all people data */
   getData(): Observable<any> {
-    return this.http.get(this.url)
+    return this.http.get(this.url);
+  }
+
+  getDetails(id) {
+    return this.http.get(`${this.url}/${id}`);
   }
 }

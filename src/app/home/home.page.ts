@@ -19,6 +19,7 @@ export class HomePage implements OnInit {
     /* so setting this.result directly here was retuning the unresolved Observable.
      used subscribe method to get around this issue to ensure it had resolved, works
      similar to the 'then' block of a promise */
-    this.homeService.getData().subscribe(res => this.results = res)
+    this.homeService.getData()
+      .subscribe(res => this.results = res.results)
   }
 }

@@ -18,9 +18,11 @@ export class HomeDetailsPage implements OnInit {
    */
   constructor(private activatedRoute: ActivatedRoute, private homeService: HomeService) { }
 
-  ngOnInit() {}
-
-  openWebsite() {
-    window.open(this.information.Website, '_blank');
+  ngOnInit() {
+    // pulling our id from the url parameters for the character we need to make a request for
+    let id = this.activatedRoute.snapshot.paramMap.get('id');
+    //callin api with id, replacing info null with response
+    this.homeService.getDetails(id)
+      .subscribe(res => this.information = res);
   }
 }
