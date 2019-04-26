@@ -1,22 +1,22 @@
 <ion-content>
-  <ion-list>
+  <div class="detail-container">
     <ion-card *ngIf="information">
+      <div class="inner-detail-container">
       <ion-card-header class="card-header">
-        <ion-avatar>
-          <img src="https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y">
-        </ion-avatar>
+          <!-- Api does not include images -->
+          <img src="https://prominentgaming.net/assets/images/Starwars_flat_forceawakens_10.png">
         <ion-card-title>{{information.name}}</ion-card-title>
       </ion-card-header>
       <div class="card-details">
         <ion-card-subtitle>Character Stats</ion-card-subtitle>
-        Gender: {{information.gender}}<br />
-        Height: {{information.height}} cm<br />
-        Mass: {{information.mass}} kg<br />
-        Eye colour: {{information.eye_color}}
+        <div class="left">Gender: {{information.gender}}<br />
+        Eye colour: {{information.eye_color}}</div>
+        <div class="right">Mass: {{information.mass}} kg<br />
+        Height: {{information.height}} cm
+      </div>
       </div>
       <ion-button class="btn" routerLink="/home" routerDirection="forward">Return to menu</ion-button>
+      </div>
     </ion-card>
-
-  </ion-list>
-
+</div>
 </ion-content>
