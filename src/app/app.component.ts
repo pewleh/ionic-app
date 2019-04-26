@@ -13,16 +13,28 @@ export class AppComponent {
     {
       title: 'Sign Out',
       url: '/login',
-      icon: 'login'
+      icon: 'arrow-round-back'
     },
     {
       title: 'Home',
       url: '/home',
       icon: 'home'
     },{
-      title: 'List',
-      url: '/list',
-      icon: 'list'
+      title: 'Photos',
+      url: '/home',
+      icon: 'arrow-round-up'
+    },{
+      title: 'Available Missions',
+      url: '/home',
+      icon: 'arrow-round-up'
+    },{
+      title: 'My Missions',
+      url: '/home',
+      icon: 'arrow-round-up'
+    },{
+      title: 'Chat',
+      url: '/home',
+      icon: 'arrow-round-up'
     }
   ];
 

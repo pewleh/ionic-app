@@ -9,22 +9,22 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content *ngIf="!results">Loading....</ion-content>
+<ion-content class="loader" *ngIf="!results">Loading....</ion-content>
 
 <ion-content *ngIf="results">
+  <div class="home-container">
   <ion-list>
     <ion-card button *ngFor="let item of results; let i = index" [routerLink]="['/', 'home', i + 1]">
       <ion-card-header class="card-header">
         <ion-avatar>
-          <img src="https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y">
+            <img src="https://prominentgaming.net/assets/images/Starwars_flat_forceawakens_10.png" />
         </ion-avatar>
         <ion-card-title>{{item.name}}</ion-card-title>
       </ion-card-header>
       <ion-card-content>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        Born in : {{item.birth_year}}
       </ion-card-content>
     </ion-card>
-
   </ion-list>
-
+</div>
 </ion-content>
