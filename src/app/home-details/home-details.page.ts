@@ -18,15 +18,7 @@ export class HomeDetailsPage implements OnInit {
    */
   constructor(private activatedRoute: ActivatedRoute, private homeService: HomeService) { }
 
-  ngOnInit() {
-    // Get the ID that was passed with the URL
-    let id = this.activatedRoute.snapshot.paramMap.get('id');
-
-    // Get the information from the API
-    this.homeService.getHomeDetails(id).subscribe(result => {
-      this.information = result;
-    });
-  }
+  ngOnInit() {}
 
   openWebsite() {
     window.open(this.information.Website, '_blank');

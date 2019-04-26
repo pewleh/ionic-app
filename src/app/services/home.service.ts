@@ -14,9 +14,8 @@ export class HomeService {
    in the constructor of this class */
   constructor(private http: HttpClient) { }
 
-  /* making request to star wars api for all people data, comes back as object
-  with an array results, so have used the pipe method to extract that specific data*/
+  /* making request to star wars api for all people data */
   getData(): Observable<any> {
-    return this.http.get(this.url).pipe(map(res => res.results))
+    return this.http.get(this.url)
   }
 }
