@@ -9,6 +9,8 @@
   </ion-toolbar>
 </ion-header>
 
+<ion-content *ngIf="!results">Loading....</ion-content>
+
 <ion-content *ngIf="results">
   <ion-list>
     <ion-card button *ngFor="let item of results; let i = index" [routerLink]="['/', 'home', i + 1]">

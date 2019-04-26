@@ -1,20 +1,21 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>Login</ion-title>
-  </ion-toolbar>
-</ion-header>
 
-<ion-content class="login-container">
-  <div class="inner-login-container">
-      <div class="list list-inset">
-          <label class="item item-input">
-              <input type="text" placeholder="Username" ng-model="data.username">
-          </label>
-          <label class="item item-input">
-              <input type="password" placeholder="Password" ng-model="data.password">
-          </label>
-      </div>
+<ion-content>
+
+  <div class="login-container">
+    <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/756ac3cf-5cef-4bfe-a74e-43e4d713903a/d98b8ef-f36069b2-9799-45c0-9549-7ecac198f0f4.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzc1NmFjM2NmLTVjZWYtNGJmZS1hNzRlLTQzZTRkNzEzOTAzYVwvZDk4YjhlZi1mMzYwNjliMi05Nzk5LTQ1YzAtOTU0OS03ZWNhYzE5OGYwZjQucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.IbsLopJx6wLITmXrBuY40fMZ_Rn6P-uLhy2pnSDNiAw" />
+    <ion-title>Sign In</ion-title>
+    <div class="inner-container">
+
+      <label class="item item-input">
+        <ion-icon name="mail"></ion-icon>
+        <input type="text" placeholder="E-mail" ng-model="data.email"required>
+      </label><br />
+      <label class="item item-input2">
+        <ion-icon name="lock"></ion-icon>
+        <input type="password" placeholder="Password" ng-model="data.password" required>
+      </label>
+    </div>
+    <ion-button class="btn btn-class">Signup</ion-button>
+    <ion-button class="btn" routerLink="/home" routerDirection="forward">Sign In</ion-button>
   </div>
-  <ion-button class="btn" routerLink="/home" routerDirection="forward">Login</ion-button>
-  <ion-button class="btn btn-class">Signup</ion-button>
 </ion-content>

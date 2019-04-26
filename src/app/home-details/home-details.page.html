@@ -7,6 +7,13 @@
         </ion-avatar>
         <ion-card-title>{{information.name}}</ion-card-title>
       </ion-card-header>
+      <div class="card-details">
+        <ion-card-subtitle>Character Stats</ion-card-subtitle>
+        Gender: {{information.gender}}<br />
+        Height: {{information.height}} cm<br />
+        Mass: {{information.mass}} kg<br />
+        Eye colour: {{information.eye_color}}
+      </div>
       <ion-button class="btn" routerLink="/home" routerDirection="forward">Return to menu</ion-button>
     </ion-card>
 
