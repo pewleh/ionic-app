@@ -9,8 +9,9 @@ div.detail-container{
       border-radius: 80px;
       }
       .card-details{
-        width: 265px;
+        width: 345px;
         margin: 0 auto;
+
           .left{
             float: left;
           }
@@ -18,15 +19,20 @@ div.detail-container{
             float:right;
           }
         }
+        .bottom{
+          padding-top: 20px;
+            padding-bottom: 276px;
+        }
         ion-card-title{
           font-size: 30px;
         }
         ion-card-subtitle{
           font-size: 20px;
+          padding-bottom: 10px;
       }
     }
     ion-button{
-      margin: 25px
+      margin: 25px;
     }
 }
 ion-card{

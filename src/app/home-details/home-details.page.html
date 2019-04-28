@@ -9,14 +9,30 @@
       </ion-card-header>
       <div class="card-details">
         <ion-card-subtitle>Character Stats</ion-card-subtitle>
-        <div class="left">Gender: {{information.gender}}<br />
-        Eye colour: {{information.eye_color}}</div>
-        <div class="right">Mass: {{information.mass}} kg<br />
-        Height: {{information.height}} cm
+        <div class="left">
+          <h6>Gender : </h6> {{information.gender}}<br />
+          <h6>Eye colour : </h6> {{information.eye_color}}<br />
+          <div class="bottom">
+          <h6>Vehicle(s) : </h6>
+          <div *ngFor="let vehicle of information.vehicles">
+          {{vehicle.name}}
+          </div>
+        </div>
+        </div>
+        <div class="right">
+          <h6>Mass : </h6>{{information.mass}} kg<br />
+          <h6>Height : </h6>{{information.height}} cm<br />
+          <div class="bottom">
+          <h6>Film(s) : </h6>
+          <div *ngFor="let film of information.films">
+          {{film.title}}
+          </div>
+          </div>
       </div>
       </div>
       <ion-button class="btn" routerLink="/home" routerDirection="forward">Return to menu</ion-button>
       </div>
+
     </ion-card>
-</div>
+  </div>
 </ion-content>
