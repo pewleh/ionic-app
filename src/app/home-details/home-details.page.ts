@@ -27,12 +27,12 @@ export class HomeDetailsPage implements OnInit {
         const details = {
           ...res
         }
-        this.homeService.getAll(res.films).subscribe(res => details.films = res);
+        // this.homeService.getAll(res.films).subscribe(res => details.films = res);
         // this.homeService.getAll(res.species).subscribe(res => details.species = res);
-        this.homeService.getAll(res.vehicles).subscribe(res => details.vehicles = res);
+        // this.homeService.getAll(res.vehicles).subscribe(res => details.vehicles = res);
         // this.homeService.getAll(res.starships).subscribe(res => details.starships = res);
         // this.homeService.getAll([res.homeworld]).subscribe(res => details.homeworld = res);
-        // console.log(details)
+        console.log(details)
         this.information = details
       });
   }
